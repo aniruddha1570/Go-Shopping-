@@ -1,0 +1,134 @@
+/* styles.css */
+
+body {
+  background: #f3e6ff; /* soft light purple background */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0 20px;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #6a4a86;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(106, 74, 134, 0.2);
+}
+
+main p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+h2 {
+  color: #6a4a86;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+ul li {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+blockquote {
+  font-style: italic;
+  color: #555;
+  margin: 20px 0;
+  padding-left: 15px;
+  border-left: 4px solid #6a4a86;
+}
+
+/* Button styles */
+.join-btn {
+  background-color: #a678d6;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(166, 120, 214, 0.4);
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.join-btn:hover {
+  background-color: #915ccd;
+}
+
+/* Modal styles */
+.modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* translucent dark overlay */
+  display: none;
+}
+
+.modal-content {
+  background-color: #6a4a86;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  color: white;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 8px 16px rgba(106, 74, 134, 0.5);
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  main {
+    padding: 15px;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  ul li {
+    font-size: 1rem;
+  }
+}
